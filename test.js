@@ -2,7 +2,7 @@ var fs      = require('fs');
 var path    = require('path');
 var assert  = require('assert');
 var request = require('supertest');
-var app     = require('./app').app;
+var app     = require('./app');
 
 function binaryParser(response, callback) {
   response.setEncoding('binary');
