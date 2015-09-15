@@ -1,4 +1,18 @@
 {
+  "activitycontinuation": {
+    "apps": [
+      "23KMWZ572J.net.artsy.artsy",
+      "ZH8TGFYKDK.net.artsy.artsy.dev",
+      "ZH8TGFYKDK.net.artsy.artsy.beta"
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "23KMWZ572J.net.artsy.artsy",
+      "ZH8TGFYKDK.net.artsy.artsy.dev",
+      "ZH8TGFYKDK.net.artsy.artsy.beta"
+    ]
+  },
   "applinks": {
     "apps": [],
     "details": [
