@@ -1,0 +1,30 @@
+{
+  "name": "artsy-eigen-web-association",
+  "version": "1.0.0",
+  "description": "A tiny app that serves the apple-app-site-association required for iOS Handoff related features.",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artsy/artsy-eigen-web-association.git"
+  },
+  "author": {
+    "name": "Eloy Durán",
+    "email": "eloy.de.enige@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artsy/artsy-eigen-web-association/issues"
+  },
+  "homepage": "https://github.com/artsy/artsy-eigen-web-association",
+  "dependencies": {
+    "express": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "supertest": "*"
+  }
+}
