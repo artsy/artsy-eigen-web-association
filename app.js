@@ -8,7 +8,8 @@ app.get('/', function(request, response) {
   response.sendFile(filename, options, function(error) {
     if (error) {
       console.log(error);
-      response.status(error.status).end();
+      code = error.status >= 100 && error.status < 600 ? error.status : 500
+      response.status(code).end();
     }
   });
 });
