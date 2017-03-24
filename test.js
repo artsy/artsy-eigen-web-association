@@ -25,7 +25,7 @@ describe('apple-app-site-association serving', function() {
   it('returns the right content type', function(done) {
     request(app)
       .get('/')
-      .expect('Content-Type', 'application/pkcs7-mime', done);
+      .expect('Content-Type', 'application/json', done);
   });
 
   it('serves the correct static file', function(done) {
@@ -34,7 +34,7 @@ describe('apple-app-site-association serving', function() {
       .parse(binaryParser)
       .end(function(error, response) {
         if (error) return done(error);
-        var expected = fs.readFileSync(path.resolve(__dirname, 'apple-app-site-association'));
+        var expected = fs.readFileSync(path.resolve(__dirname, 'apple-app-site-association.json'));
         assert.equal(0, Buffer.compare(expected, response.body));
         done();
       });
