@@ -22,13 +22,3 @@ Once mounted, you should be able to verify it’s correctness [here](https://lim
 
 When making changes, you should do so in the `apple-app-site-association.json`
 file.
-
-Once finished with your changes, you’ll need to sign the file so that iOS 8
-can confirm the validity of the configuration. Get the `artsy.net` SSL
-certificate files from the 1password engineering vault and place them in a
-directory. Then create the signed file like so:
-
-    $ make CERT_DIR="/path/to/dir/with/certs"
-
-Be sure to remember to delete the certificate files from your local file system
-once done.

@@ -1,8 +1,8 @@
 var path     = require('path');
 var express  = require('express');
 var app      = express();
-var filename = path.resolve(__dirname, 'apple-app-site-association');
-var options  = { 'headers': { 'Content-Type': 'application/pkcs7-mime' } };
+var filename = path.resolve(__dirname, 'apple-app-site-association.json');
+var options  = { 'headers': { 'Content-Type': 'application/json' } };
 
 app.get('/', function(request, response) {
   response.sendFile(filename, options, function(error) {

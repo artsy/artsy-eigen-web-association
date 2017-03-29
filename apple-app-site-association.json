@@ -26,11 +26,19 @@
       },
       {
         "appID": "ZH8TGFYKDK.net.artsy.artsy.dev",
-        "paths": [ "*" ]
+        "paths": [
+                   "NOT /article/*",
+                   "NOT /2016-year-in-art",
+                   "*"
+        ]
       },
       {
         "appID": "ZH8TGFYKDK.net.artsy.artsy.beta",
-        "paths": [ "*" ]
+        "paths": [
+                   "NOT /article/*",
+                   "NOT /2016-year-in-art",
+                   "*"
+        ]
       }
     ]
   }
