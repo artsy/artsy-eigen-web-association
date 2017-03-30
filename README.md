@@ -16,7 +16,7 @@ This app is meant to be used inside other apps. As such, the file serving is
 mounted at `/`, which means that the apps using this app should mount it at
 `/apple-app-site-association`.
 
-Once mounted, you should be able to verify it’s correctness [here](https://limitless-sierra-4673.herokuapp.com).
+Once mounted, you should be able to verify it’s correctness [here](https://branch.io/resources/aasa-validator/).
 
 ## Changing config file
 
