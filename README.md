@@ -18,7 +18,11 @@ mounted at `/`, which means that the apps using this app should mount it at
 
 Once mounted, you should be able to verify it’s correctness [here](https://branch.io/resources/aasa-validator/).
 
+For Sailthru, the file needs to be uploaded to the Universal Links [settings
+page](https://my.sailthru.com/settings/universal_links).
+
 ## Changing config file
 
 When making changes, you should do so in the `apple-app-site-association.json`
-file.
+file and then run `yarn build` to encode new paths for Sailthru or remove old
+ones.
