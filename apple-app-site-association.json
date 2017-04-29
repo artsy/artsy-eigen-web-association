@@ -1,16 +1,12 @@
 {
   "activitycontinuation": {
     "apps": [
-      "23KMWZ572J.net.artsy.artsy",
-      "ZH8TGFYKDK.net.artsy.artsy.dev",
-      "ZH8TGFYKDK.net.artsy.artsy.beta"
+      "23KMWZ572J.net.artsy.artsy"
     ]
   },
   "webcredentials": {
     "apps": [
-      "23KMWZ572J.net.artsy.artsy",
-      "ZH8TGFYKDK.net.artsy.artsy.dev",
-      "ZH8TGFYKDK.net.artsy.artsy.beta"
+      "23KMWZ572J.net.artsy.artsy"
     ]
   },
   "applinks": {
@@ -19,25 +15,9 @@
       {
         "appID": "23KMWZ572J.net.artsy.artsy",
         "paths": [
-                   "NOT /article/*",
-                   "NOT /2016-year-in-art",
-                   "*"
-        ]
-      },
-      {
-        "appID": "ZH8TGFYKDK.net.artsy.artsy.dev",
-        "paths": [
-                   "NOT /article/*",
-                   "NOT /2016-year-in-art",
-                   "*"
-        ]
-      },
-      {
-        "appID": "ZH8TGFYKDK.net.artsy.artsy.beta",
-        "paths": [
-                   "NOT /article/*",
-                   "NOT /2016-year-in-art",
-                   "*"
+          "NOT /article/*",
+          "NOT /2016-year-in-art",
+          "*"
         ]
       }
     ]
