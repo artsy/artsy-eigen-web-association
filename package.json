@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test.js",
+    "build": "node add-sailthru-paths.js",
     "start": "node server.js"
   },
   "repository": {
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "pre-commit": "^1.2.2",
     "supertest": "*"
-  }
+  },
+  "pre-commit": "build"
 }
