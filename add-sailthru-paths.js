@@ -6,7 +6,7 @@
  * (This specific link redirects to https://www.artsy.net/article/artsy-editorial-mets-roof-hosts-dinner-party-5-000-years-art-invited?utm_source=sailthru&utm_medium=email&utm_campaign=9466122-Editorial-04-25-17&utm_term=ArtsyTopStoriesWeekly)
  *
  * The problem with that is that iOS won’t be able to exclude paths in the normal way. However, it turns out that the
- * encoded URL contains a base64 version of the actual Artsy URL, so we can exlcude based on that. This script takes the
+ * encoded URL contains a base64 version of the actual Artsy URL, so we can exclude based on that. This script takes the
  * patterns specified in the apple-app-site-association.json file and generates the encoded versions of them. Or, if a
  * pattern was removed, it removes the corresponding encoded pattern.
  */
@@ -33,9 +33,16 @@ function encodePath(path) {
     .join("*")
 }
 
+/**
+ * Only encode upto the largest multiple of 3 so that no padding is required to encode to base64.
+ *
+ * Match everything before, which is going to be the domain (`https://www.artsy.net`) base64 encoded, and after because
+ * Sailthru adds another path component that we don’t care about.
+ */
 function encodePattern(pattern) {
   const path = pattern.match(/^NOT (.+)$/)[1]
-  return `NOT *${encodePath(path)}*`
+  const encoded = encodePath(path.slice(0, -(path.length % 3)))
+  return `NOT *${encoded}*`
 }
 
 updateFile(json => {
