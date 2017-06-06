@@ -9,6 +9,8 @@ For more information see:
 * [Handoff programming guide](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html#//apple_ref/doc/uid/TP40014338-CH2-SW10)
 * [Universal Links programming guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 * [Shared Web Credentials programming guide](https://developer.apple.com/library/ios/documentation/Security/Reference/SharedWebCredentialsRef/)
+* [Sailthru Universal Links Documentation](https://getstarted.sailthru.com/mobile/apple-ios-app-universal-links/)
+* [Sailthru UL FAQ](https://sailthru.zendesk.com/hc/en-us/articles/217102466-Universal-Links-Troubleshooting-and-FAQ)
 
 ## Serving config file
 
@@ -26,3 +28,7 @@ page](https://my.sailthru.com/settings/universal_links).
 When making changes, you should do so in the `apple-app-site-association.json`
 file and then run `yarn build` to encode new paths for Sailthru or remove old
 ones.
+
+## Caching
+
+Apple caches the apple-site-association file on app install. This means any updates to the `apple-site-association` file will only affect users who have recently installed the app, updated the app, or turned Universal Linking [off (and on again)](https://stackoverflow.com/questions/32729489/how-can-i-reset-ios-9-universal-linking-settings). More details about how Apple caches this file can be found on this [Stack Overflow answer](https://stackoverflow.com/a/41305871).
