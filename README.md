@@ -31,4 +31,4 @@ ones.
 
 ## Caching
 
-Apple caches the apple-site-association file on app install. This means any updates to the `apple-site-association` file will only affect users who have recently installed the app, updated the app, or turned Universal Linking [off (and on again)](https://stackoverflow.com/questions/32729489/how-can-i-reset-ios-9-universal-linking-settings). More details about how Apple caches this file can be found on this [Stack Overflow answer](https://stackoverflow.com/a/41305871).
+Apple caches the apple-app-site-association file on app install. This means any updates to the `apple-app-site-association` file will only affect users who have recently installed the app, updated the app, or turned Universal Linking [off (and on again)](https://stackoverflow.com/questions/32729489/how-can-i-reset-ios-9-universal-linking-settings). More details about how Apple caches this file can be found on this [Stack Overflow answer](https://stackoverflow.com/a/41305871).
