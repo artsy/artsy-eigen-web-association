@@ -33,6 +33,10 @@ function encodePath(path) {
     .join("*")
 }
 
+function isNotSailthruPattern(pattern) {
+  return !/^NOT \/click\/\*/.test(pattern)
+}
+
 /**
  * Only encode upto the largest multiple of 3 so that no padding is required to encode to base64.
  *
@@ -48,5 +52,5 @@ function encodePattern(pattern) {
 updateFile(json => {
   const app = json.applinks.details[0]
   const patterns = unencodedPatterns(app.paths)
-  app.paths = [...patterns.concat(patterns.map(encodePattern)), "*"]
+  app.paths = [...patterns.concat(patterns.filter(isNotSailthruPattern).map(encodePattern)), "*"]
 })
