@@ -18,12 +18,14 @@
           "NOT /article/*",
           "NOT /2016-year-in-art",
           "NOT /venice-biennale*",
+          "NOT /gender-equality*",
           "NOT /click/*/aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3VzL3BvZGNhc3QvYXJ0c3kv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS5uZXQv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
           "NOT *L2FydGljbGUv*",
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
+          "NOT *L2dlbmRlci1lcXVhbGl0*",
           "*"
         ]
       }
