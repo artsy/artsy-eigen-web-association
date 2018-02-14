@@ -22,6 +22,7 @@
           "NOT /click/*/aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3VzL3BvZGNhc3QvYXJ0c3kv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS5uZXQv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
+          "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNvbQ*",
           "NOT *L2FydGljbGUv*",
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
