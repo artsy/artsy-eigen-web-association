@@ -21,7 +21,7 @@ mounted at `/`, which means that the apps using this app should mount it at
 Once mounted, you should be able to verify it’s correctness [here](https://branch.io/resources/aasa-validator/).
 
 For Sailthru, the file needs to be uploaded to the Universal Links [settings
-page](https://my.sailthru.com/settings/universal_links).
+page](https://my.sailthru.com/settings/universal_links). This uploads the file to Sailthru, but it does not actually update the [hosted config](https://link.artsy.net/apple-app-site-association). Therefore, we need to reach out to support@sailthru.com and ask them to make the change once uploaded.
 
 ## Changing config file
 
