@@ -1,13 +1,9 @@
 {
   "activitycontinuation": {
-    "apps": [
-      "23KMWZ572J.net.artsy.artsy"
-    ]
+    "apps": ["23KMWZ572J.net.artsy.artsy"]
   },
   "webcredentials": {
-    "apps": [
-      "23KMWZ572J.net.artsy.artsy"
-    ]
+    "apps": ["23KMWZ572J.net.artsy.artsy"]
   },
   "applinks": {
     "apps": [],
@@ -16,6 +12,10 @@
         "appID": "23KMWZ572J.net.artsy.artsy",
         "paths": [
           "NOT /article/*",
+          "NOT /series/*",
+          "NOT /video/*",
+          "NOT /news/*",
+          "NOT /editorial/*",
           "NOT /2016-year-in-art",
           "NOT /venice-biennale*",
           "NOT /gender-equality*",
@@ -24,6 +24,10 @@
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
           "NOT *L2FydGljbGUv*",
+          "NOT *L3Nlcmll*",
+          "NOT *L3ZpZGVv*",
+          "NOT *L25ld3Mv*",
+          "NOT *L2VkaXRvcmlh*",
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
           "NOT *L2dlbmRlci1lcXVhbGl0*",
