@@ -5,7 +5,7 @@
  *
  * (This specific link redirects to https://www.artsy.net/article/artsy-editorial-mets-roof-hosts-dinner-party-5-000-years-art-invited?utm_source=sailthru&utm_medium=email&utm_campaign=9466122-Editorial-04-25-17&utm_term=ArtsyTopStoriesWeekly)
  *
- * The problem with that is that iOS won’t be able to exclude paths in the normal way. However, it turns out that the
+ * The problem with this is that iOS won’t be able to exclude paths in the normal way. However, it turns out that the
  * encoded URL contains a base64 version of the actual Artsy URL, so we can exclude based on that. This script takes the
  * patterns specified in the apple-app-site-association.json file and generates the encoded versions of them. Or, if a
  * pattern was removed, it removes the corresponding encoded pattern.
@@ -18,7 +18,9 @@ const filename = "apple-app-site-association.json"
 function updateFile(block) {
   const json = JSON.parse(fs.readFileSync(filename, { encoding: "utf8" }))
   block(json)
-  fs.writeFileSync(filename, JSON.stringify(json, null, 2) + "\n", { encoding: "utf8" })
+  fs.writeFileSync(filename, JSON.stringify(json, null, 2) + "\n", {
+    encoding: "utf8"
+  })
 }
 
 function unencodedPatterns(patterns) {
@@ -52,5 +54,10 @@ function encodePattern(pattern) {
 updateFile(json => {
   const app = json.applinks.details[0]
   const patterns = unencodedPatterns(app.paths)
-  app.paths = [...patterns.concat(patterns.filter(isNotSailthruPattern).map(encodePattern)), "*"]
+  app.paths = [
+    ...patterns.concat(
+      patterns.filter(isNotSailthruPattern).map(encodePattern)
+    ),
+    "*"
+  ]
 })
