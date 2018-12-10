@@ -32,6 +32,7 @@
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
           "NOT *L2dlbmRlci1lcXVhbGl0*",
+          "NOT *L2NvbGxlY3Rpb24v*",
           "*"
         ]
       }
