@@ -6,11 +6,11 @@ required way.
 
 For more information see:
 
-* [Handoff programming guide](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html#//apple_ref/doc/uid/TP40014338-CH2-SW10)
-* [Universal Links programming guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
-* [Shared Web Credentials programming guide](https://developer.apple.com/library/ios/documentation/Security/Reference/SharedWebCredentialsRef/)
-* [Sailthru Universal Links Documentation](https://getstarted.sailthru.com/mobile/apple-ios-app-universal-links/)
-* [Sailthru UL FAQ](https://sailthru.zendesk.com/hc/en-us/articles/217102466-Universal-Links-Troubleshooting-and-FAQ)
+- [Handoff programming guide](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html#//apple_ref/doc/uid/TP40014338-CH2-SW10)
+- [Universal Links programming guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
+- [Shared Web Credentials programming guide](https://developer.apple.com/library/ios/documentation/Security/Reference/SharedWebCredentialsRef/)
+- [Sailthru Universal Links Documentation](https://getstarted.sailthru.com/mobile/apple-ios-app-universal-links/)
+- [Sailthru UL FAQ](https://sailthru.zendesk.com/hc/en-us/articles/217102466-Universal-Links-Troubleshooting-and-FAQ)
 
 ## Serving config file
 
@@ -28,6 +28,10 @@ page](https://my.sailthru.com/settings/universal_links). This uploads the file t
 When making changes, you should do so in the `apple-app-site-association.json`
 file and then run `yarn build` to encode new paths for Sailthru or remove old
 ones.
+
+## After config changes are merged
+
+After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force, artsy-wwwify, and Sailthru. To update the package in force and artsy-wwwify run the command `yarn upgrade artsy-eigen-web-association` in those repositories and check that in. Updates to Sailthru requires you to notify Sailthru support which someone from `#crm` slack channel can help with.
 
 ## Caching
 
