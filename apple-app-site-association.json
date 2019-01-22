@@ -24,6 +24,7 @@
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS5uZXQv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
+          "NOT /users/auth/facebook/callback*",
           "NOT *L2FydGljbGUv*",
           "NOT *L3Nlcmll*",
           "NOT *L3ZpZGVv*",
