@@ -3,7 +3,11 @@
     "apps": ["23KMWZ572J.net.artsy.artsy"]
   },
   "webcredentials": {
-    "apps": ["23KMWZ572J.net.artsy.artsy", "23KMWZ572J.net.artsy.Emission", "23KMWZ572J.sy.art.folio"]
+    "apps": [
+      "23KMWZ572J.net.artsy.artsy",
+      "23KMWZ572J.net.artsy.Emission",
+      "23KMWZ572J.sy.art.folio"
+    ]
   },
   "applinks": {
     "apps": [],
@@ -11,6 +15,28 @@
       {
         "appID": "23KMWZ572J.net.artsy.artsy",
         "paths": [
+          "/collection/20th-century-latin-american-artists",
+          "/collection/absolut-vodka-artist-collaborations",
+          "/collection/ai-weiwei-odyssey",
+          "/collection/andy-warhol-posters",
+          "/collection/art-gifts",
+          "/collection/arte-povera",
+          "/collection/arthur-elgort-jazz",
+          "/collection/black-arts-movement",
+          "/collection/collectible-sculptures",
+          "/collection/contemporary",
+          "/collection/emerging-street-art",
+          "/collection/kaws-companions",
+          "/collection/korean-minimalism",
+          "/collection/light-and-space-movement",
+          "/collection/movements-of-the-decade",
+          "/collection/photography",
+          "/collection/post-war",
+          "/collection/sculpture-through-the-centuries",
+          "/collection/shepard-fairey-50-shades-of-black",
+          "/collection/street-art-cartoons",
+          "/collection/takashi-murakami-jellyfish-eyes",
+          "/collection/women-of-post-war",
           "NOT /article/*",
           "NOT /series/*",
           "NOT /video/*",
