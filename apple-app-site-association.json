@@ -3,7 +3,11 @@
     "apps": ["23KMWZ572J.net.artsy.artsy"]
   },
   "webcredentials": {
-    "apps": ["23KMWZ572J.net.artsy.artsy", "23KMWZ572J.net.artsy.Emission", "23KMWZ572J.sy.art.folio"]
+    "apps": [
+      "23KMWZ572J.net.artsy.artsy",
+      "23KMWZ572J.net.artsy.Emission",
+      "23KMWZ572J.sy.art.folio"
+    ]
   },
   "applinks": {
     "apps": [],
@@ -11,14 +15,17 @@
       {
         "appID": "23KMWZ572J.net.artsy.artsy",
         "paths": [
+          "NOT /articles",
           "NOT /article/*",
           "NOT /series/*",
           "NOT /video/*",
+          "NOT /news",
           "NOT /news/*",
           "NOT /editorial/*",
           "NOT /2016-year-in-art",
           "NOT /venice-biennale*",
           "NOT /gender-equality*",
+          "NOT /collections",
           "NOT /collection/*",
           "NOT /click/*/aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3VzL3BvZGNhc3QvYXJ0c3kv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS5uZXQv*",
@@ -26,10 +33,9 @@
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
           "NOT /users/auth/facebook/callback*",
           "NOT *L2FydGljbGUv*",
-          "NOT *L3Nlcmll*",
           "NOT *L3ZpZGVv*",
+          "NOT *L25l*",
           "NOT *L25ld3Mv*",
-          "NOT *L2VkaXRvcmlh*",
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
           "NOT *L2dlbmRlci1lcXVhbGl0*",
