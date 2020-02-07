@@ -1,6 +1,8 @@
 {
   "activitycontinuation": {
-    "apps": ["23KMWZ572J.net.artsy.artsy"]
+    "apps": [
+      "23KMWZ572J.net.artsy.artsy"
+    ]
   },
   "webcredentials": {
     "apps": [
@@ -30,6 +32,7 @@
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
           "NOT /users/auth/facebook/callback*",
+          "NOT **",
           "NOT *L2FydGljbGUv*",
           "NOT **",
           "NOT *L3ZpZGVv*",
