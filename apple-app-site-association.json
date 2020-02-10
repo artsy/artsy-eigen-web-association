@@ -1,8 +1,6 @@
 {
-  "activitycontinuation": {
-    "apps": [
-      "23KMWZ572J.net.artsy.artsy"
-    ]
+  "activity ntinuation": {
+    "apps": ["23KMWZ572J.net.artsy.artsy"]
   },
   "webcredentials": {
     "apps": [
@@ -32,17 +30,13 @@
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
           "NOT /users/auth/facebook/callback*",
-          "NOT **",
           "NOT *L2FydGljbGUv*",
-          "NOT **",
           "NOT *L3ZpZGVv*",
           "NOT *L25l*",
           "NOT *L25ld3Mv*",
-          "NOT **",
           "NOT *LzIwMTYteWVhci1pbi1h*",
           "NOT *L3ZlbmljZS1iaWVubmFs*",
           "NOT *L2dlbmRlci1lcXVhbGl0*",
-          "NOT **",
           "*"
         ]
       }
