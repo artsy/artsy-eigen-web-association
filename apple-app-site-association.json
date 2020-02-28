@@ -28,6 +28,8 @@
           "NOT /venice-biennale*",
           "NOT /gender-equality*",
           "NOT /collections",
+          "NOT /log_in",
+          "NOT /sign_up",
           "NOT /click/*/aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3VzL3BvZGNhc3QvYXJ0c3kv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS5uZXQv*",
           "NOT /click/*/aHR0cHM6Ly9hcnRzeS50eXBlZm9ybS5j*",
@@ -45,6 +47,8 @@
           "NOT *L3ZlbmljZS1iaWVubmFs*",
           "NOT *L2dlbmRlci1lcXVhbGl0*",
           "NOT *L2NvbGxlY3Rpb25z*",
+          "NOT *L2xvZ19p*",
+          "NOT *L3NpZ25f*",
           "NOT *L3VzZXJzL2F1dGgvZmFjZWJvb2svY2FsbGJhY2s=*",
           "NOT *L2lkZW50aXR5LXZlcmlmaWNhdGlv*",
           "*"
