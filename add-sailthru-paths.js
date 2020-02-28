@@ -11,28 +11,28 @@
  * pattern was removed, it removes the corresponding encoded pattern.
  */
 
-const fs = require("fs")
+const fs = require('fs')
 
-const filename = "apple-app-site-association.json"
+const filename = 'apple-app-site-association.json'
 
 function updateFile(block) {
-  const json = JSON.parse(fs.readFileSync(filename, { encoding: "utf8" }))
+  const json = JSON.parse(fs.readFileSync(filename, { encoding: 'utf8' }))
   block(json)
-  fs.writeFileSync(filename, JSON.stringify(json, null, 2) + "\n", {
-    encoding: "utf8"
+  fs.writeFileSync(filename, JSON.stringify(json, null, 2) + '\n', {
+    encoding: 'utf8'
   })
 }
 
 function unencodedPatterns(patterns) {
-  return patterns.filter(pattern => pattern.includes("/"))
+  return patterns.filter(pattern => pattern.includes('/'))
 }
 
 function encodePath(path) {
   return path
-    .split("*")
+    .split('*')
     .filter(component => component.length)
-    .map(component => new Buffer(component).toString("base64"))
-    .join("*")
+    .map(component => new Buffer(component).toString('base64'))
+    .join('*')
 }
 
 function isNotSailthruPattern(pattern) {
@@ -47,7 +47,7 @@ function isNotSailthruPattern(pattern) {
  */
 function encodePattern(pattern) {
   const path = pattern.match(/^NOT (.+)$/)[1]
-  const encoded = encodePath(path.slice(0, -(path.length % 3)))
+  const encoded = encodePath(path.slice(0, path.length - (path.length % 3)))
   return `NOT *${encoded}*`
 }
 
@@ -58,6 +58,6 @@ updateFile(json => {
     ...patterns.concat(
       patterns.filter(isNotSailthruPattern).map(encodePattern)
     ),
-    "*"
+    '*'
   ]
 })
