@@ -31,7 +31,7 @@ ones.
 
 ## After config changes are merged
 
-After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force, artsy-wwwify, and Sailthru. To update the package in force and artsy-wwwify run the command `yarn upgrade artsy-eigen-web-association` in those repositories and check that in. Updates to Sailthru requires you to notify Sailthru support which someone from `#crm` slack channel can help with.
+After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force, artsy-wwwify, and Sailthru. To update the package in force and artsy-wwwify run the command `yarn add git://github.com/artsy/artsy-eigen-web-association.git` in those repositories and check that in. Updates to Sailthru requires you to notify Sailthru support which someone from `#crm` slack channel can help with.
 
 ## Caching
 
