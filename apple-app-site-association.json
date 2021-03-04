@@ -36,6 +36,7 @@
           "NOT /click/*/aHR0cHM6Ly9hcHAuYWRqdXN0LmNv*",
           "NOT /users/auth/facebook/callback*",
           "NOT /identity-verification*",
+          "NOT /reset_password",
           "NOT *L2FydGljbGVz*",
           "NOT *L2FydGljbGUv*",
           "NOT *L3Nlcmllcy8=*",
@@ -51,6 +52,7 @@
           "NOT *L3NpZ25f*",
           "NOT *L3VzZXJzL2F1dGgvZmFjZWJvb2svY2FsbGJhY2s=*",
           "NOT *L2lkZW50aXR5LXZlcmlmaWNhdGlv*",
+          "NOT *L3Jlc2V0X3Bhc3N3b3Jk*",
           "*"
         ]
       }
