@@ -17,8 +17,6 @@
       {
         "appID": "23KMWZ572J.net.artsy.artsy",
         "paths": [
-          "NOT /articles",
-          "NOT /article/*",
           "NOT /series/*",
           "NOT /video/*",
           "NOT /news",
