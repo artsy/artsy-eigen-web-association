@@ -37,8 +37,7 @@
           "NOT /reset_password",
           "NOT /change-password",
           "NOT /forgot",
-          "NOT *L2FydGljbGVz*",
-          "NOT *L2FydGljbGUv*",
+          "NOT /price-databse",
           "NOT *L3Nlcmllcy8=*",
           "NOT *L3ZpZGVv*",
           "NOT *L25l*",
@@ -55,6 +54,7 @@
           "NOT *L3Jlc2V0X3Bhc3N3b3Jk*",
           "NOT *L2NoYW5nZS1wYXNzd29y*",
           "NOT *L2Zvcmdv*",
+          "NOT *L3ByaWNlLWRhdGFi*",
           "*"
         ]
       }
