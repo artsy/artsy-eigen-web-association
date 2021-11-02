@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/artsy/artsy-eigen-web-association",
   "dependencies": {
-    "express": "*"
+    "express": "^4.15.0"
   },
   "devDependencies": {
     "@artsy/auto-config": "^1.1.0",
-    "mocha": "*",
+    "mocha": "^3.3.0",
     "pre-commit": "^1.2.2",
-    "supertest": "*"
+    "supertest": "^3.0.0"
   },
   "pre-commit": "build"
 }
