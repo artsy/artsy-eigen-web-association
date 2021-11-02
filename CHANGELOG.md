@@ -1,3 +1,15 @@
+# v1.1.1 (Tue Nov 02 2021)
+
+#### 🐛  Bug Fix
+
+- chore: Bump Deps [#43](https://github.com/artsy/artsy-eigen-web-association/pull/43) ([@icirellik](https://github.com/icirellik))
+
+#### Authors: 1
+
+- Cameron Rollheiser ([@icirellik](https://github.com/icirellik))
+
+---
+
 # v1.1.0 (Tue Nov 02 2021)
 
 #### 🚀  Enhancement
