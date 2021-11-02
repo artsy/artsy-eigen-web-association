@@ -1,0 +1,10 @@
+.circleci/
+.github/
+node_modules/
+src/
+test/
+
+.autorc
+.nvmrc
+jest.contig.ts
+tsconfig.json

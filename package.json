@@ -1,12 +1,17 @@
 {
-  "name": "artsy-eigen-web-association",
-  "version": "1.0.7",
+  "name": "@artsy/eigen-web-association",
+  "version": "1.0.8",
   "description": "A tiny app that serves the apple-app-site-association required for iOS Handoff related features.",
   "main": "app.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test.js",
     "build": "node add-sailthru-paths.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "release": "auto shipit"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,7 @@
     "express": "*"
   },
   "devDependencies": {
+    "@artsy/auto-config": "^1.1.0",
     "mocha": "*",
     "pre-commit": "^1.2.2",
     "supertest": "*"
