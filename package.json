@@ -9,7 +9,6 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test.js",
-    "build": "node add-sailthru-paths.js",
     "start": "node server.js",
     "release": "auto shipit"
   },
@@ -32,8 +31,6 @@
   "devDependencies": {
     "@artsy/auto-config": "^1.1.0",
     "mocha": "^3.3.0",
-    "pre-commit": "^1.2.2",
     "supertest": "^3.0.0"
-  },
-  "pre-commit": "build"
+  }
 }
