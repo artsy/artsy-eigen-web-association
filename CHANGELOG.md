@@ -1,3 +1,15 @@
+# v1.2.0 (Wed Nov 03 2021)
+
+#### 🚀  Enhancement
+
+- chore: update docs to reflect up to date state [#44](https://github.com/artsy/artsy-eigen-web-association/pull/44) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.1.1 (Tue Nov 02 2021)
 
 #### 🐛  Bug Fix
