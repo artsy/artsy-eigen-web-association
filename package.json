@@ -1,6 +1,6 @@
 {
   "name": "@artsy/eigen-web-association",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A tiny app that serves the apple-app-site-association required for iOS Handoff related features.",
   "main": "app.js",
   "publishConfig": {
