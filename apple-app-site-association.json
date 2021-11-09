@@ -27,7 +27,7 @@
           "NOT /log_in",
           "NOT /news",
           "NOT /news/*",
-          "NOT /price-databse",
+          "NOT /price-database",
           "NOT /reset_password",
           "NOT /series/*",
           "NOT /sign_up",
