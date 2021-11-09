@@ -1,3 +1,15 @@
+# v1.2.1 (Tue Nov 09 2021)
+
+#### 🐛  Bug Fix
+
+- fix: add missing a to price-database [#45](https://github.com/artsy/artsy-eigen-web-association/pull/45) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.2.0 (Wed Nov 03 2021)
 
 #### 🚀  Enhancement
