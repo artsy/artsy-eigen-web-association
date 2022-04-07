@@ -1,3 +1,19 @@
+# v1.2.2 (Thu Apr 07 2022)
+
+#### 🐛  Bug Fix
+
+- chore: update dependabot reviewers [#46](https://github.com/artsy/artsy-eigen-web-association/pull/46) ([@ovasdi](https://github.com/ovasdi))
+
+#### ⚠️ Pushed to `main`
+
+- master main swtich ([@ovasdi](https://github.com/ovasdi))
+
+#### Authors: 1
+
+- Ozzie Vasdi ([@ovasdi](https://github.com/ovasdi))
+
+---
+
 # v1.2.1 (Tue Nov 09 2021)
 
 #### 🐛  Bug Fix
