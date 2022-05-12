@@ -1,3 +1,20 @@
+# v1.3.0 (Thu May 12 2022)
+
+#### 🚀  Enhancement
+
+- fix: add google callback to denylist [#48](https://github.com/artsy/artsy-eigen-web-association/pull/48) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### 🏠  Internal
+
+- chore: update dependabot assignee [#47](https://github.com/artsy/artsy-eigen-web-association/pull/47) ([@ovasdi](https://github.com/ovasdi))
+
+#### Authors: 2
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+- Ozzie Vasdi ([@ovasdi](https://github.com/ovasdi))
+
+---
+
 # v1.2.2 (Thu Apr 07 2022)
 
 #### 🐛  Bug Fix
