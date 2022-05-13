@@ -1,3 +1,15 @@
+# v1.5.1 (Fri May 13 2022)
+
+#### ⚠️ Pushed to `main`
+
+- add the apple auth callback to denylist ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v1.5.0 (Fri May 13 2022)
 
 #### 🚀  Enhancement
