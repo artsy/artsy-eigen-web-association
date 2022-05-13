@@ -1,3 +1,15 @@
+# v1.5.0 (Fri May 13 2022)
+
+#### 🚀  Enhancement
+
+- fix: add new sign up endpoint [#50](https://github.com/artsy/artsy-eigen-web-association/pull/50) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v1.4.0 (Fri May 13 2022)
 
 #### 🚀  Enhancement
