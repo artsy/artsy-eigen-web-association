@@ -34,6 +34,7 @@
           "NOT /series/*",
           "NOT /sign_up",
           "NOT /signup",
+          "NOT /users/auth/apple/callback*",
           "NOT /users/auth/facebook/callback*",
           "NOT /users/auth/google/callback*",
           "NOT /venice-biennale*",
