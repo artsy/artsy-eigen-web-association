@@ -25,6 +25,8 @@
           "NOT /gender-equality*",
           "NOT /identity-verification*",
           "NOT /log_in",
+          "NOT /login",
+          "NOT /#",
           "NOT /news",
           "NOT /news/*",
           "NOT /price-database",
