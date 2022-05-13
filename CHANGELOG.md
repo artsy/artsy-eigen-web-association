@@ -1,3 +1,15 @@
+# v1.4.0 (Fri May 13 2022)
+
+#### 🚀  Enhancement
+
+- fix: add other login endpoints [#49](https://github.com/artsy/artsy-eigen-web-association/pull/49) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v1.3.0 (Thu May 12 2022)
 
 #### 🚀  Enhancement
