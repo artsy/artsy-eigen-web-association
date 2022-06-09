@@ -24,7 +24,7 @@ When making changes, you should do so in the `apple-app-site-association.json` f
 
 ## After config changes are merged
 
-After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force, artsy-wwwify, and Sailthru. To update the package in force and artsy-wwwify run the command `yarn add git://github.com/artsy/artsy-eigen-web-association.git` in those repositories and check that in. See [This PR](https://github.com/artsy/artsy-eigen-web-association/pull/40) as an example
+After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force and artsy-wwwify. To update the package in force and artsy-wwwify run the command `yarn add @artsy/artsy-eigen-web-association@latest` in those repositories and check that in. See [This PR](https://github.com/artsy/artsy-eigen-web-association/pull/40) as an example
 
 ## Caching
 
