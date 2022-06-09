@@ -1,3 +1,15 @@
+# v1.5.2 (Thu Jun 09 2022)
+
+#### 🐛  Bug Fix
+
+- skip /art-appraisals [#51](https://github.com/artsy/artsy-eigen-web-association/pull/51) ([@pvinis](https://github.com/pvinis))
+
+#### Authors: 1
+
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v1.5.1 (Fri May 13 2022)
 
 #### ⚠️ Pushed to `main`
