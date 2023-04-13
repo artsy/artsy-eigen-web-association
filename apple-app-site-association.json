@@ -30,7 +30,6 @@
           "NOT /login",
           "NOT /news",
           "NOT /news/*",
-          "NOT /price-database",
           "NOT /reset_password",
           "NOT /series/*",
           "NOT /sign_up",
