@@ -1,3 +1,22 @@
+# v1.6.0 (Wed Apr 19 2023)
+
+#### 🚀  Enhancement
+
+- feat: Remove price-database [#55](https://github.com/artsy/artsy-eigen-web-association/pull/55) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- Bump cookiejar from 2.1.2 to 2.1.4 [#54](https://github.com/artsy/artsy-eigen-web-association/pull/54) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump minimatch from 3.0.3 to 3.1.2 [#53](https://github.com/artsy/artsy-eigen-web-association/pull/53) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump express from 4.17.1 to 4.17.3 [#52](https://github.com/artsy/artsy-eigen-web-association/pull/52) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v1.5.3 (Thu Jun 09 2022)
 
 #### ⚠️ Pushed to `main`
