@@ -4,8 +4,9 @@
   "description": "Simple Cloudflare Worker for serving the apple-app-site-association and asset links for mobile apps.",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler publish",
-    "build": "tsc"
+    "deploy-cloudflare-workers:staging": "yarn wrangler deploy --keep-vars --env staging",
+    "deploy-cloudflare-workers": "yarn wrangler deploy --keep-vars --env production",
+    "type-check": "tsc"
   },
   "repository": {
     "type": "git",
