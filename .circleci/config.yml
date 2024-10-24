@@ -1,34 +1,77 @@
 version: 2.1
 
 orbs:
-  yarn: artsy/yarn@6.1.0
-  auto: artsy/auto@2.0.0
+  horizon: artsy/release@volatile
+  node: circleci/node@5.3.0
+  yarn: artsy/yarn@6.5.0
+
+not_staging_or_release: &not_staging_or_release
+  filters:
+    branches:
+      ignore:
+        - staging
+        - release
+
+only_main: &only_main
+  context: hokusai
+  filters:
+    branches:
+      only: main
+
+only_release: &only_release
+  context: hokusai
+  filters:
+    branches:
+      only: release
+
+only_development: &only_development
+  filters:
+    branches:
+      ignore:
+        - staging
+        - release
+        - main
+
+commands:
+  yarn_install:
+    steps:
+      - yarn/load_dependencies
+      - yarn/install
+      - yarn/save_dependencies
 
 workflows:
-  build_and_verify:
+  default:
     jobs:
-      - yarn/workflow-queue
-      - yarn/update-cache:
+      - node/test:
+          <<: *not_staging_or_release
+          name: test-jest
+          pkg-manager: yarn
+          test-results-for: jest
+          version: "18.15"
+
+      - node/run:
+          <<: *not_staging_or_release
+          name: type-check
+          pkg-manager: yarn
+          yarn-run: type-check
+
+      - node/run:
+          <<: *only_main
+          name: deploy-cloudflare-workers-staging
+          context: cloudflare
+          pkg-manager: yarn
+          yarn-run: deploy-cloudflare-workers:staging
           requires:
-            - yarn/workflow-queue
-      - yarn/test:
+            - type-check
+            - test-jest
+
+      # release
+      - node/run:
+          <<: *only_release
+          name: deploy-cloudflare-workers
+          context: cloudflare
+          pkg-manager: yarn
+          yarn-run: deploy-cloudflare-workers
           requires:
-            - yarn/workflow-queue
-      - auto/publish-canary:
-          context: npm-deploy
-          filters:
-            branches:
-              ignore: main
-          requires:
-            - yarn/workflow-queue
-            - yarn/test
-            - yarn/update-cache
-      - auto/publish:
-          context: npm-deploy
-          filters:
-            branches:
-              only: main
-          requires:
-            - yarn/workflow-queue
-            - yarn/test
-            - yarn/update-cache
+            - type-check
+            - test-jest
