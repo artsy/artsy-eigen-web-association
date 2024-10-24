@@ -3,15 +3,7 @@
   "version": "1.6.0",
   "description": "A tiny app that serves the apple-app-site-association required for iOS Handoff related features.",
   "main": "app.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test.js",
-    "start": "node server.js",
-    "release": "auto shipit"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/artsy/artsy-eigen-web-association.git"
