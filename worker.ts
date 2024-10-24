@@ -69,14 +69,14 @@ export default {
     const url = new URL(request.url);
 
     // Route for Apple App Site Association
-    if (url.pathname === '/.apple-test/apple-app-site-association') {
+    if (url.pathname === '/.well-known/apple-app-site-association') {
       return new Response(JSON.stringify(appleAppSiteAssociation), {
         headers: { 'Content-Type': 'application/json' }
       });
     }
 
     // Route for Android Asset Links
-    if (url.pathname === '/.android-test/asset-links.json') {
+    if (url.pathname === '/.well-known/assetlinks.json') {
       return new Response(JSON.stringify(assetLinks), {
         headers: { 'Content-Type': 'application/json' }
       });
