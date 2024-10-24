@@ -6,7 +6,8 @@
     "dev": "wrangler dev",
     "deploy-cloudflare-workers:staging": "yarn wrangler deploy --keep-vars --env staging",
     "deploy-cloudflare-workers": "yarn wrangler deploy --keep-vars --env production",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
