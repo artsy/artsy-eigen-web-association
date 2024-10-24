@@ -40,7 +40,7 @@ describe("Worker", () => {
   });
 
   it("should return the apple-app-site-association JSON on the correct route", async () => {
-    const resp = await worker.fetch("/.apple-test/apple-app-site-association");
+    const resp = await worker.fetch("/.well-known/apple-app-site-association");
 
     expect(resp.status).toBe(200);
     expect(resp.headers.get("content-type")).toBe("application/json");
@@ -57,7 +57,7 @@ describe("Worker", () => {
   });
 
   it("should return the assetLinks JSON on the correct route", async () => {
-    const resp = await worker.fetch("/.android-test/asset-links.json");
+    const resp = await worker.fetch("/.well-known/assetlinks.json");
 
     expect(resp.status).toBe(200);
     expect(resp.headers.get("content-type")).toBe("application/json");
