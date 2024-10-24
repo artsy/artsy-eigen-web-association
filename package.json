@@ -31,6 +31,7 @@
   "devDependencies": {
     "@artsy/auto-config": "^1.1.0",
     "mocha": "^3.3.0",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "wrangler": "^3.82.0"
   }
 }
