@@ -1,18 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2022"],
+    "target": "ES2019",
+    "lib": ["ES2019"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "strict": true,
-    "types": ["@cloudflare/workers-types"]
+    "skipLibCheck": true,
+    "types": ["@cloudflare/workers-types", "jest"]
   },
   "include": [
-    "worker.ts"
+    "worker.ts",
+    "test.ts"
   ],
   "exclude": [
     "node_modules"
