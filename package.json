@@ -1,7 +1,7 @@
 {
   "name": "@artsy/eigen-web-association",
   "version": "2.0.0",
-  "description": "Simple Cloudflare Worker for serving the apple-app-site-association and asset links for mobile apps..",
+  "description": "Simple Cloudflare Worker for serving the apple-app-site-association and asset links for mobile apps.",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler publish",
