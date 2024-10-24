@@ -1,8 +1,8 @@
 # artsy-eigen-web-association
 
-This tiny app does nothing but serve the `apple-app-site-association` file,
-needed for iOS Handoff/Universal Links/Shared Web Credentials to work, in the
-required way.
+This repo manages `apple-app-site-association` and `assetlinks.json` files,
+needed for iOS Handoff/Universal Links/Shared Web Credentials to work.
+These are deployed to cloudflare worker via deploy prs.
 
 For more information see:
 
@@ -10,21 +10,30 @@ For more information see:
 - [Universal Links programming guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 - [Shared Web Credentials programming guide](https://developer.apple.com/library/ios/documentation/Security/Reference/SharedWebCredentialsRef/)
 
-## Serving config file
+## Testing the served config locally
 
-This app is meant to be used inside other apps. As such, the file serving is
-mounted at `/`, which means that the apps using this app should mount it at
-`/apple-app-site-association`.
 
-Once mounted, you should be able to verify it’s correctness [here](https://branch.io/resources/aasa-validator/).
+Install dependencies:
+`yarn install`
+
+Run the local worker server:
+`yarn dev`
+
+In the output you should see the url of the running server.
+You can fetch the configs at:
+`<YOUR-LOCAL-SERVER-URL>/.well-known/apple-app-site-association`
+and:
+`<YOUR-LOCAL-SERVER-URL>/.well-known/assetlinks.json`
+
+You can verify apple config correctness [here](https://branch.io/resources/aasa-validator/).
 
 ## Changing config file
 
-When making changes, you should do so in the `apple-app-site-association.json` file.
+When making changes, you should do so in the `worker.ts` file in the `appleAppSiteAssociation` for apple and the `assetLinks` object for android.
 
 ## After config changes are merged
 
-After changes to the `apple-app-site-association.json` file have been merged, you'll need to update the three places that depend on it which include force and artsy-wwwify. To update the package in force and artsy-wwwify run the command `yarn add @artsy/artsy-eigen-web-association@latest` in those repositories and check that in. See [This PR](https://github.com/artsy/artsy-eigen-web-association/pull/40) as an example
+A deploy pr should open automatically, merging this will result in deploying the worker to production which will in turn update the files everywhere.
 
 ## Caching
 
