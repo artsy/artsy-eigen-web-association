@@ -27,6 +27,7 @@
     "@types/debug": "^4.1.12",
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
     "ts-jest": "^29.2.5",
     "typescript": "^5.6.3",
     "wrangler": "^3.82.0"
