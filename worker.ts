@@ -68,21 +68,20 @@ export default {
   async fetch(request: Request, env: any, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
-    // Route for Apple App Site Association
+    // Apple App Site Association
     if (url.pathname === '/.well-known/apple-app-site-association') {
       return new Response(JSON.stringify(appleAppSiteAssociation), {
         headers: { 'Content-Type': 'application/json' }
       });
     }
 
-    // Route for Android Asset Links
+    // Android Asset Links
     if (url.pathname === '/.well-known/assetlinks.json') {
       return new Response(JSON.stringify(assetLinks), {
         headers: { 'Content-Type': 'application/json' }
       });
     }
 
-    // Fallback response for non-existent routes
     return new Response('Not Found', { status: 404 });
   }
 };
