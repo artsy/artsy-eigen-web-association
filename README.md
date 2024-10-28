@@ -25,7 +25,7 @@ You can fetch the configs at:
 and:
 `<YOUR-LOCAL-SERVER-URL>/.well-known/assetlinks.json`
 
-You can verify apple config correctness [here](https://branch.io/resources/aasa-validator/).
+You can verify config correctness [here](https://yurl.chayev.com).
 
 ## Changing config file
 
