@@ -1,0 +1,9 @@
+main = './worker.ts'
+compatibility_date = "2024-10-18"
+
+[env.staging]
+name = "eigen-web-association-worker-staging"
+workers_dev = true # Deploy to the workers.dev subdomain
+
+[env.production]
+name = "eigen-web-association-worker"
