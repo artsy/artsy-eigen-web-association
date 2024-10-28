@@ -13,7 +13,6 @@ For more information see:
 
 ## Testing the served config locally
 
-
 Install dependencies:
 `yarn install`
 
