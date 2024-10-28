@@ -72,9 +72,6 @@ workflows:
           context: cloudflare
           pkg-manager: yarn
           yarn-run: deploy-cloudflare-workers
-          requires:
-            - type-check
-            - test-jest
 
       - horizon/block:
           context: horizon
