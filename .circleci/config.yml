@@ -65,7 +65,7 @@ workflows:
             - type-check
             - test-jest
 
-      # release
+      # Release
       - node/run:
           <<: *only_release
           name: deploy-cloudflare-workers
@@ -75,3 +75,11 @@ workflows:
           requires:
             - type-check
             - test-jest
+
+      - horizon/block:
+          context: horizon
+          project_id: 277
+          filters:
+            branches:
+              only:
+                - release
