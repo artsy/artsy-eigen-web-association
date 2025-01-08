@@ -71,4 +71,16 @@ describe("Worker", () => {
     expect(assetLinks.target).toHaveProperty("package_name");
     expect(assetLinks.target).toHaveProperty("sha256_cert_fingerprints");
   });
+
+  it("should return apple-developer-merchantid-domain-association on the correct route", async () => {
+    const resp = await worker.fetch("/.well-known/apple-developer-merchantid-domain-association");
+
+    expect(resp.status).toBe(200);
+    expect(resp.headers.get("content-type")).toBe("text/plain");
+
+    const text = await resp.text() as string;
+
+    expect(text).toMatch(/7B2270.*30227D/);
+    expect(text).toHaveLength(9094);
+  });
 });

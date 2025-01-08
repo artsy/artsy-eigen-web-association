@@ -1,5 +1,8 @@
 /// <reference types="@cloudflare/workers-types" />
 
+// @ts-ignore
+import appleDeveloperMerchantidDomainAssociation from "./apple-developer-merchantid-domain-association.txt"
+
 const appleAppSiteAssociation = {
   "activitycontinuation": {
     "apps": [
@@ -79,6 +82,13 @@ export default {
     if (url.pathname === '/.well-known/assetlinks.json') {
       return new Response(JSON.stringify(assetLinks), {
         headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    // Apple Developer Merchantid Domain Association
+    if (url.pathname === '/.well-known/apple-developer-merchantid-domain-association') {
+      return new Response(appleDeveloperMerchantidDomainAssociation, {
+        headers: { 'Content-Type': 'text/plain' }
       });
     }
 
