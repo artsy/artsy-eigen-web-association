@@ -6,12 +6,14 @@ import appleDeveloperMerchantidDomainAssociation from "./apple-developer-merchan
 const appleAppSiteAssociation = {
   "activitycontinuation": {
     "apps": [
-      "23KMWZ572J.net.artsy.artsy"
+      "23KMWZ572J.net.artsy.artsy",
+      "23KMWZ572J.net.artsy.qa"
     ]
   },
   "webcredentials": {
     "apps": [
       "23KMWZ572J.net.artsy.artsy",
+      "23KMWZ572J.net.artsy.qa",
       "23KMWZ572J.net.artsy.Emission",
       "23KMWZ572J.sy.art.folio"
     ]
@@ -21,6 +23,34 @@ const appleAppSiteAssociation = {
     "details": [
       {
         "appID": "23KMWZ572J.net.artsy.artsy",
+        "paths": [
+          "NOT /#",
+          "NOT /2016-year-in-art",
+          "NOT /art-appraisals",
+          "NOT /change-password",
+          "NOT /collections",
+          "NOT /editorial/*",
+          "NOT /forgot",
+          "NOT /gender-equality*",
+          "NOT /identity-verification*",
+          "NOT /log_in",
+          "NOT /login",
+          "NOT /news",
+          "NOT /news/*",
+          "NOT /reset_password",
+          "NOT /series/*",
+          "NOT /sign_up",
+          "NOT /signup",
+          "NOT /users/auth/apple/callback*",
+          "NOT /users/auth/facebook/callback*",
+          "NOT /users/auth/google/callback*",
+          "NOT /venice-biennale*",
+          "NOT /video/*",
+          "*"
+        ]
+      },
+      {
+        "appID": "23KMWZ572J.net.artsy.qa",
         "paths": [
           "NOT /#",
           "NOT /2016-year-in-art",
