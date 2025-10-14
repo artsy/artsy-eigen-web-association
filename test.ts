@@ -1,6 +1,6 @@
 import { unstable_dev } from "wrangler";
 import type { UnstableDevWorker } from "wrangler";
-import { defaultAppleAppSiteAssociation, cmsAppleAppSiteAssociation } from "./worker";
+import { defaultAppleAppSiteAssociation, cmsAppleAppSiteAssociation } from "./constants";
 
 describe("Worker", () => {
   let worker: UnstableDevWorker;
