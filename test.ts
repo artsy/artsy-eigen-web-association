@@ -1,5 +1,6 @@
 import { unstable_dev } from "wrangler";
 import type { UnstableDevWorker } from "wrangler";
+import { defaultAppleAppSiteAssociation, cmsAppleAppSiteAssociation } from "./worker";
 
 describe("Worker", () => {
   let worker: UnstableDevWorker;
@@ -82,5 +83,27 @@ describe("Worker", () => {
 
     expect(text).toMatch(/7B2270.*30227D/);
     expect(text).toHaveLength(9094);
+  });
+
+  it("should disable universal links for cms.artsy.net domain", async () => {
+    const resp = await worker.fetch("https://cms.artsy.net/.well-known/apple-app-site-association");
+
+    expect(resp.status).toBe(200);
+    expect(resp.headers.get("content-type")).toBe("application/json");
+
+    const json = await resp.json();
+
+    expect(json).toEqual(cmsAppleAppSiteAssociation);
+  });
+
+  it("should return default applinks for non-cms domains", async () => {
+    const resp = await worker.fetch("https://artsy.net/.well-known/apple-app-site-association");
+
+    expect(resp.status).toBe(200);
+    expect(resp.headers.get("content-type")).toBe("application/json");
+
+    const json = await resp.json();
+
+    expect(json).toEqual(defaultAppleAppSiteAssociation);
   });
 });

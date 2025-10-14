@@ -3,7 +3,7 @@
 // @ts-ignore
 import appleDeveloperMerchantidDomainAssociation from "./apple-developer-merchantid-domain-association.txt"
 
-const appleAppSiteAssociation = {
+export const defaultAppleAppSiteAssociation = {
   "activitycontinuation": {
     "apps": [
       "23KMWZ572J.net.artsy.artsy",
@@ -97,13 +97,40 @@ const assetLinks = [
   }
 ];
 
+export const cmsAppleAppSiteAssociation = {
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "23KMWZ572J.net.artsy.artsy",
+        "paths": ["NOT /", "NOT /*"]
+      },
+      {
+        "appID": "23KMWZ572J.net.artsy.qa",
+        "paths": ["NOT /", "NOT /*"]
+      }
+    ]
+  }
+}; 
+
 export default {
   async fetch(request: Request, env: any, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
     // Apple App Site Association
     if (url.pathname === '/.well-known/apple-app-site-association') {
-      return new Response(JSON.stringify(appleAppSiteAssociation), {
+      let responseBody;
+      const hostname = url.hostname;
+      if (hostname === 'cms.artsy.net') {
+        // Disable universal links for the CMS domain
+        // We want to handle these links in CMS directly
+        responseBody = cmsAppleAppSiteAssociation;
+      } else {
+        // Normal behavior for artsy.net and others
+        responseBody = defaultAppleAppSiteAssociation;
+      }
+
+      return new Response(JSON.stringify(responseBody), {
         headers: { 'Content-Type': 'application/json' }
       });
     }
